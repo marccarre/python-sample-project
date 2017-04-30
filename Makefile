@@ -18,7 +18,7 @@ init:
 
 test:
 	pipenv run pylint $(PROJECT_NAME)
-	pipenv run pylint $(TESTS_DIR) --disable=missing-docstring,deprecated-method,invalid-name
+	pipenv run pylint $(TESTS_DIR) --disable=missing-docstring,deprecated-method,invalid-name,protected-access
 	pipenv run pytest --verbose --cov=$(PROJECT_NAME) --cov-report html --cov-fail-under $(MIN_CODE_COVERAGE)
 
 build: test
