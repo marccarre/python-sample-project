@@ -1,4 +1,5 @@
 # None of the below files should make it to the Docker image:
+**/__pycache__
 .cache
 .coverage
 .gitignore
