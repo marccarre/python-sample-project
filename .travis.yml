@@ -5,7 +5,7 @@ python:
 services:
   - docker
 install:
-  - make setup
+  - make init
 script:
-  - make
+  - make test
   - make build

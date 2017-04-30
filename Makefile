@@ -11,13 +11,10 @@ CURRENT_DIR := $(dir $(realpath $(firstword $(MAKEFILE_LIST))))
 TESTS_DIR := tests
 MIN_CODE_COVERAGE := 90
 
-setup:
+init:
 	pip install pipenv
 	pipenv lock
 	pipenv install --dev
-
-init: setup
-	pipenv shell  # Enter virtual environment.
 
 test:
 	pipenv run pylint $(PROJECT_NAME)

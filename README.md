@@ -10,7 +10,7 @@ A cloud-native Python sample project leveraging containers for runtime.
 1. Install `docker`
 2. Install `make`
 3. Install `python3` & `pip`
-4. Finally, run: `make init`. This will install [`pipenv`](http://docs.pipenv.org/en/latest/), create a virtual environment for Python, pull all dependencies required for this project in this environment, and enter it.
+4. Finally, run: `make init`. This will install [`pipenv`](http://docs.pipenv.org/en/latest/), create a virtual environment for Python and pull all dependencies required for this project in this environment. If you want to run under this virtual environment in your shell, run: `pipenv shell`.
 
 
 ### Features
@@ -23,8 +23,7 @@ A cloud-native Python sample project leveraging containers for runtime.
 
 ### `Makefile`'s targets
 
-- `setup`: set the project up;
-- `init`: set the project up & enter the virtual environment;
+- `init`: set the project up;
 - `test`: lint all sources, run all tests & gather test coverage metrics;
 - `build`: package this project as a Docker container (required for `run` and `release` targets below);
 - `run`: runs the Docker container containing this project, as it would in production;
