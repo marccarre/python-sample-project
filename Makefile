@@ -1,4 +1,4 @@
-.PHONY: default init test build run release shell clean
+.PHONY: default setup init test build run release shell clean
 
 default: test ;
 
@@ -11,12 +11,14 @@ CURRENT_DIR := $(dir $(realpath $(firstword $(MAKEFILE_LIST))))
 TESTS_DIR := tests
 MIN_CODE_COVERAGE := 90
 
-init:
+setup:
 	pip install pipenv
-	pipenv shell  # Enter virtual environment.
 	pipenv lock
 	pipenv install --dev
 	pipenv install
+
+init: setup
+	pipenv shell  # Enter virtual environment.
 
 test:
 	pylint $(PROJECT_NAME)

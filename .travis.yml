@@ -5,6 +5,6 @@ language:
 services:
   - docker
 install:
-  - make init
+  - make setup
 script:
   - make
