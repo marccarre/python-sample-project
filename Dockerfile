@@ -10,4 +10,4 @@ WORKDIR /usr/src/hello_python
 RUN pip install --no-cache-dir pipenv
 RUN pipenv lock && pipenv install --system
 
-ENTRYPOINT ["python", "/usr/src/hello_python/hello_python/sample_module.py"]
+ENTRYPOINT ["python", "hello_python/sample_module.py"]
