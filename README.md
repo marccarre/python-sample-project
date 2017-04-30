@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/marccarre/python-sample-project.svg?branch=master)](https://travis-ci.org/marccarre/python-sample-project)
+[![Docker Pulls on Quay](https://quay.io/repository/marccarre/hello-python/status "Docker Repository on Quay")](https://quay.io/repository/marccarre/hello-python)
+[![Docker Pulls on DockerHub](https://img.shields.io/docker/pulls/marccarre/hello-python.svg?maxAge=604800)](https://hub.docker.com/r/marccarre/hello-python/)
+
 # python-sample-project
 A cloud-native Python sample project leveraging containers for runtime.
 
