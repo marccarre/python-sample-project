@@ -1,0 +1,15 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pytest = ">=3.0.7"
+pytest-cov = ">=2.4.0"
+pylint = ">=1.7.1"
+unittest2 = ">=1.1.0"
+
+[packages]
+# Add runtime dependencies here.
+
+[requires]
+python_version = ">=3.6"
