@@ -15,7 +15,6 @@ setup:
 	pip install pipenv
 	pipenv lock
 	pipenv install --dev
-	pipenv install
 
 init: setup
 	pipenv shell  # Enter virtual environment.
