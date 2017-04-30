@@ -1,0 +1,10 @@
+sudo: required
+language:
+  - C
+  - python
+services:
+  - docker
+install:
+  - make init
+script:
+  - make
