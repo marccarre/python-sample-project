@@ -1,6 +1,6 @@
 ''' Sample module. Document it as such to help the next developers and please pylint. '''
 
-class SampleClass(object):
+class SampleClass:
     ''' Sample class. Document it as such to help the next developers and please pylint. '''
     def __init__(self, name):
         self._name = name
